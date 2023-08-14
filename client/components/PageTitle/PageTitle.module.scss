@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.root {
+  color: currentColor;
+  fill: currentColor;
+  display: flex;
+  flex-direction: column;
+
+  &.h1 {
+    --heading-font-size: 1.875rem;
+    --heading-weight: 600;
+    --description-font-size: 1.125rem;
+    gap: $p-4;
+  }
+
+  &.h2 {
+    --heading-font-size: 1.5rem;
+    --heading-weight: 500;
+    --description-font-size: 1rem;
+    gap: $p-3;
+  }
+
+  &.h3 {
+    --heading-font-size: 1.25rem;
+    --heading-weight: 500;
+    --description-font-size: 0.875rem;
+    gap: $p-2;
+  }
+
+  .heading {
+    // font-size: var(--heading-font-size);
+    // font-weight: var(--heading-weight);
+  }
+
+  .description {
+    font-size: var(--description-font-size);
+    color: var(--muted-text);
+  }
+}

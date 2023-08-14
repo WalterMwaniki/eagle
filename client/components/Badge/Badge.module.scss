@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.root {}
+
+.attention {
+  @include error;
+}
+
+.error {
+  @include error;
+}
+
+.small {
+  border-radius: $radius-full;
+  width: 0.3rem;
+  height: 0.3rem;
+
+  div {
+    display: none;
+  }
+}
+
+.medium {
+  border-radius: $radius-full;
+
+  div {
+    @include label-small;
+    max-width: 4ch;
+    overflow: hidden;
+  }
+
+  padding: 0 $p-1;
+}
+
+.large {
+  border-radius: $radius-full;
+
+  div {
+    @include label-medium;
+    max-width: 8ch;
+    overflow: hidden;
+  }
+
+  padding: 0 $p-1;
+}

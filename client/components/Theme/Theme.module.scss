@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  color: var(--md-sys-color-on-surface);
+
+  .colorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .colorPicker::-webkit-color-swatch {
+    border-radius: 5px;
+    border: none;
+  }
+
+  .colorPicker::-moz-color-swatch {
+    border-radius: 5px;
+    border: none;
+  }
+
+  //   label {
+  //     display: none;
+  //   }
+}

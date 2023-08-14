@@ -1,0 +1,50 @@
+@import "../../styles/variables";
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: $p-1-5;
+  padding: $p-1-5 $p-4;
+}
+
+.iconButton {
+  display: grid;
+  place-items: center;
+  // padding: $p-1-5;
+  width: dp(24);
+  height: dp(24);
+}
+
+.button,
+.iconButton {
+  @include label-large;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: $radius-full;
+  flex: 0 0 auto;
+
+  &.primary {
+    @include primary;
+  }
+
+  &.secondary {
+    @include secondary;
+  }
+
+  &.outlined {
+    @include primary-outline;
+  }
+
+  &.elevated {
+    @include primary-elevated;
+  }
+
+  &.ghost {
+    background-color: transparent;
+    color: inherit;
+  }
+}

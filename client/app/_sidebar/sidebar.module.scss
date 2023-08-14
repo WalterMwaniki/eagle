@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.sidebarNav {
+  display: flex;
+  gap: $padding-2;
+  font-size: 0.875rem
+    /* 14px */
+  ;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    margin: 0.25rem 0;
+  }
+}
+
+.sidebarNavItem {
+  display: flex;
+  align-items: center;
+  gap: $p-2;
+  padding: $p-2;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: $radius-regular;
+  transition-property: color, background-color, text-decoration-color, fill,
+    stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 1024px) {
+    padding: $p-2;
+  }
+}
+
+.sidebarNavItemSelected {
+  background-color: $primary-container;
+  color: $on-primary-container;
+
+  svg {
+    fill: $on-primary-container !important;
+  }
+}

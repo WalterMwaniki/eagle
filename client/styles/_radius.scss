@@ -1,0 +1,26 @@
+$radius-module: 0.25rem;
+
+// Modular
+$radius-small: $radius-module; //4px
+$radius-medium: calc($radius-module * 1.5); //6px
+$radius-large: calc($radius-module * 2); //8px
+$radius-x-large: calc($radius-module * 3); //12px
+$radius-xx-large: calc($radius-module * 4); //16px
+$radius-xxx-large: calc($radius-module * 5); //32px
+
+//Special Values
+$radius-min: 0.125rem;
+$radius-regular: calc($radius-module * 2);
+$radius-section: calc($radius-module * 4);
+// Dictionary
+$radius-xs: 0.125rem;
+$radius-s: 0.25rem;
+$radius-m: 0.5rem;
+$radius-l: 1rem;
+$radius-xl: 2rem;
+$radius-full: 999rem;
+
+//Semantic
+$radius-card: $radius-xxx-large;
+$radius-circle: 50%;
+$radius-pill: $radius-full;

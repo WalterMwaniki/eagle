@@ -1,0 +1,97 @@
+@import "../../styles/variables";
+
+.root {
+  position: relative;
+  height: 100%;
+
+  // padding: $p-6 $p-2;
+
+  font-size: 0.875rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: $p-2;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: $p-10;
+
+  // border: $p-px solid $slate-400;
+  .logo {
+    border-radius: $radius-large;
+  }
+
+  div:has(> .search) {
+    flex-direction: row-reverse;
+  }
+
+  border-radius: $radius-large;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: $p-4 0;
+
+  >* {
+    margin: $p-1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $p-2;
+    padding: $p-3 $p-4;
+    border-radius: $radius-regular;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--my-hover-color);
+    }
+
+    &.item {
+      &:has(+ .subItem) {
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &.subItem {
+      color: green;
+      margin: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: $p-2 $p-2 $p-2 $p-10;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: $p-6 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  >* {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: $p-2;
+    padding: $p-4;
+    border-radius: $radius-regular;
+  }
+
+  .settings,
+  .logout {
+    &:hover {
+      background-color: var(--my-hover-color);
+    }
+  }
+}

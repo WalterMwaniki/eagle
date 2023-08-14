@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.root {
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+
+  &.label_sm {
+    font-size: 0.75rem;
+  }
+
+  &.label_md {
+    font-size: 0.875rem;
+  }
+
+  &.label_lg {
+    font-size: 1rem;
+  }
+}

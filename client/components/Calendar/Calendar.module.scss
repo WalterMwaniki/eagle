@@ -1,0 +1,232 @@
+@import '../../styles/variables.scss';
+
+@mixin centerIcon() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: dp(328);
+    max-height: dp(425);
+    padding: dp(12);
+    overflow: hidden;
+    position: relative;
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: $radius-l;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datePickerInput {
+    width: dp(355) !important;
+}
+
+.header {
+    @include body-medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: dp(32);
+    width: 100%;
+    padding: dp(8) 0;
+    margin-bottom: dp(12);
+}
+
+.monthPicker,
+.yearPicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--md-sys-color-on-surface-variant);
+    padding: 0 dp(16);
+    flex-grow: 1;
+    width: 40%;
+    height: dp(40);
+}
+
+.selectDay {
+    position: relative;
+
+    // min-height: dp(330);
+    .animateDaysFader {
+        --bg: var(--md-sys-color-surface-container-high);
+        position: absolute;
+        top: 0;
+        left: calc(-1 * dp(12));
+        width: calc(100% + dp(24));
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.01);
+        background-image: linear-gradient(to right,
+                var(--bg),
+                transparent 5%,
+                transparent 96%,
+                var(--bg));
+        z-index: 10;
+        pointer-events: none;
+    }
+}
+
+
+.weekDays,
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    place-items: center;
+    @include body-medium;
+    color: var(--md-sys-color-on-surface);
+    text-align: center;
+    padding: dp(8) 0;
+}
+
+.day {
+    width: dp(40);
+    height: dp(40);
+    display: grid;
+    place-items: center;
+    border-radius: $radius-full;
+    margin-bottom: dp(4);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+}
+
+.day.today {
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-primary);
+}
+
+.day.differentMonth {
+    color: color-mix(in srgb,
+            var(--md-sys-color-on-surface-variant),
+            var(--md-sys-color-hover-mixer));
+}
+
+.day.selected {
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: dp(16);
+    padding: dp(6) dp(16);
+    // margin-bottom: dp(8);
+    @include body-small;
+    color: var(--md-sys-color-primary);
+    // z-index: 500;
+}
+
+.DropdownTrigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.DropdownContent {
+    background: var(--md-sys-color-surface-container-high);
+    // background: rgb(162, 95, 71);
+    border-radius: $radius-l;
+    z-index: 100;
+    width: dp(350);
+    height: dp(325);
+    margin-bottom: dp(12);
+    overflow: scroll;
+    opacity: 0.5;
+}
+
+.DropdownItem {
+    display: flex;
+    align-items: center;
+    gap: dp(16);
+    padding: 0 dp(16);
+    height: dp(48);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: none;
+
+    &:hover {
+        @include hover-bg;
+    }
+
+    .DropdownIndicator {
+        width: dp(24);
+        height: dp(24);
+        @include centerIcon();
+    }
+}
+
+/*
+.selectTrigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    // gap: dp(6);
+
+    .selectIcon {
+        width: dp(24);
+        height: dp(24);
+        @include centerIcon();
+    }
+}
+
+.selectContent {
+    background: var(--md-sys-color-surface-container-high);
+    z-index: 100;
+    margin-top: dp(12);
+    width: dp(345);
+    height: 285px;
+    overflow: scroll;
+    position: relative;
+    // border: 1px solid red;
+    border-radius: $radius-l;
+
+    transform: translateX(-45px);
+
+    // div {
+    display: flex;
+    flex-direction: column;
+    gap: dp(6);
+
+    .selectItem {
+        -webkit-user-select: none;
+        user-select: none;
+        padding: dp(16);
+        display: flex;
+        align-items: center;
+        gap: dp(16);
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            @include hover-bg;
+            outline: none;
+        }
+
+        .selectItemIndicator {
+            width: dp(24);
+            height: dp(24);
+            @include centerIcon();
+        }
+    }
+}
+
+// }
+
+.SelectScrollButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    background-color: white;
+    color: var(--violet-11);
+    cursor: default;
+}*/

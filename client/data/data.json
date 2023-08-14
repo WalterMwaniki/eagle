@@ -1,0 +1,87 @@
+{
+  "educationSystems": [
+    {
+      "abbreviation": "CBC",
+      "name": "Competency-based Curriculum"
+    },
+    {
+      "abbreviation": "844",
+      "name": "8-4-4"
+    },
+    {
+      "abbreviation": "IGCSE",
+      "name": "International General Certificate of Secondary Education"
+    }
+  ],
+  "educationSystemsDetails": {
+    "CBC": {
+      "abbreviation": "CBC",
+      "name": "Competency-based Curriculum",
+      "educationLevels":[
+        {
+          "name": "Pre-Primary",
+          "years": 2,
+          "grades": ["Pre-Primary 1", "Pre-Primary 2"]
+        },
+        {
+          "name": "Lower Primary",
+          "years": 3,
+          "grades": ["Grade 1", "Grade 2", "Grade 3"]
+        },
+        {
+          "name": "Upper Primary",
+          "years": 3,
+          "grades": ["Grade 4", "Grade 5", "Grade 6"]
+        },
+        {
+          "name": "Junior Secondary",
+          "years": 3,
+          "grades": ["Grade 7", "Grade 8", "Grade 9"]
+        },
+        {
+          "name": "Senior Secondary",
+          "years": 3,
+          "grades": ["Grade 10", "Grade 11", "Grade 12"]
+        },
+        {
+          "name": "Tertiary",
+          "years": 3,
+          "grades": ["Year 1", "Year 2", "Year 3"]
+        },
+        {
+          "name": "University",
+          "years": 4,
+          "grades": ["Year 1", "Year 2", "Year 3", "Year 4"]
+        }
+      ]
+    },
+    "844": {
+      "abbreviation": "8-4-4",
+      "name": "8-4-4",
+      "educationLevels": [
+        {
+          "name": "Pre-Primary",
+          "years": 3,
+          "grades": ["Baby Class", "Nursery", "Pre-Unit"]
+        },
+        {
+          "name": "Primary",
+          "years": 8,
+          "grades": ["Standard 1", "Standard 2", "Standard 3", "Standard 4", "Standard 5", "Standard 6", "Standard 7", "Standard 8"]
+        },
+        {
+          "name": "Secondary",
+          "years": 4,
+          "grades": ["Form 1", "Form 2", "Form 3", "Form 4"]
+        },
+        {
+          "name": "University",
+          "years": 4,
+          "grades": ["Year 1", "Year 2", "Year 3", "Year 4"]
+        }
+      ]
+    }
+  },
+  "institutionGenderTypes": ["Boys", "Girls", "Mixed"],
+  "institutionAccomodationTypes": ["Day", "Boarding", "Day & Boarding"]
+}

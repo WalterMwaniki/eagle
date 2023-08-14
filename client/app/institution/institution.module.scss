@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.container {
+  margin: $p-4;
+  padding: $p-4;
+  min-height: 100vh;
+  border-radius: $radius-l;
+
+  @media (min-width: $media-tablet) {
+    margin: $p-3 $p-6;
+  }
+}
+
+.header {
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: $p-2;
+    right: $p-2;
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  aside {
+    padding: $p-4 0;
+
+    @media (min-width: 1024px) {
+      width: 15%;
+    }
+  }
+
+  main {
+    flex: 1 1 0%;
+    border-radius: $radius-l;
+    margin: $p-4 0;
+    padding: $p-4;
+    height: 100%;
+  }
+
+  section {
+    margin: 1.5rem 0;
+
+    @media (min-width: 1024px) {
+      max-width: 52rem;
+    }
+
+    fieldset {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: $media-mobile) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.settingsPageHeader {
+  @media (min-width: 1024px) {
+    max-width: 52rem;
+  }
+}

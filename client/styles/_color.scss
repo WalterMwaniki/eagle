@@ -1,0 +1,87 @@
+// Dictionary of colors
+$focus-ring: var(--md-sys-color-tertiary-container);
+
+@mixin hover-bg() {
+  &:hover {
+    background-color: color-mix(in srgb, var(--md-sys-color-surface-tint), rgb(100 100 100 / 0.05) 95%);
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1px 2px -2px rgb(50 50 50 / 0.2),
+    0 2px 1px 0 rgba(50, 50, 50, 0.2), 0 1px 4px 0 rgb(50 50 50 / 0.2);
+}
+
+@mixin primary {
+  color: var(--md-sys-color-on-primary);
+  background-color: var(--md-sys-color-primary);
+}
+
+@mixin primary-container {
+  color: var(--md-sys-color-on-primary-container);
+  background-color: var(--md-sys-color-primary-container);
+}
+
+@mixin primary-outline {
+  color: var(--md-sys-color-primary);
+  background-color: transparent;
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+@mixin primary-elevated {
+  color: var(--md-sys-color-primary);
+  background-color: var(--md-sys-color-surface-container-low);
+  @include box-shadow;
+}
+
+@mixin secondary {
+  color: var(--md-sys-color-on-secondary);
+  background-color: var(--md-sys-color-secondary);
+}
+
+@mixin secondary-container {
+  color: var(--md-sys-color-on-secondary-container);
+  background-color: var(--md-sys-color-secondary-container);
+}
+
+@mixin secondary-outline {
+  color: var(--md-sys-color-secondary);
+  background-color: transparent;
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+@mixin tertiary {
+  color: var(--md-sys-color-on-tertiary);
+  background-color: var(--md-sys-color-tertiary);
+}
+
+@mixin tertiary-container {
+  color: var(--md-sys-color-on-tertiary-container);
+  background-color: var(--md-sys-color-tertiary-container);
+}
+
+@mixin tertiary-outline {
+  color: var(--md-sys-color-tertiary);
+  background-color: transparent;
+  border: 1px solid var(--md-sys-color-outline);
+}
+
+@mixin error {
+  color: var(--md-sys-color-on-error);
+  background-color: var(--md-sys-color-error);
+}
+
+@mixin error-container {
+  color: var(--md-sys-color-on-error-container);
+  background-color: var(--md-sys-color-error-container);
+}
+
+@mixin surface {
+  color: var(--md-sys-color-on-surface);
+  background-color: var(--md-sys-color-surface);
+}
+
+@mixin surface-container {
+  color: var(--md-sys-color-on-surface-container);
+  background-color: var(--md-sys-color-surface-container);
+}

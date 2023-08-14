@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.form_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.form_label {
+  font-weight: 500;
+}
+
+.form_description {
+  font-size: 0.75rem;
+  color: var(--gray-6);
+}
+
+.form_message {
+  font-size: 0.75rem;
+  color: var(--danger-foreground);
+}

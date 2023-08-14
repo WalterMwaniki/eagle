@@ -1,0 +1,23 @@
+@import "../styles/variables";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: $p-16;
+  align-items: center;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $p-4;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+}

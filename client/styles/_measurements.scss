@@ -1,0 +1,64 @@
+$base-dp: 0.85px;
+
+@function dp($value) {
+    @return calc(#{$value} * #{$base-dp});
+}
+
+// radius
+$radius-module: 0.25rem;
+
+// Modular
+$radius-small: $radius-module; //4px
+$radius-medium: calc($radius-module * 1.5); //6px
+$radius-large: calc($radius-module * 2); //8px
+$radius-x-large: calc($radius-module * 3); //12px
+$radius-xx-large: calc($radius-module * 4); //16px
+$radius-xxx-large: calc($radius-module * 5); //32px
+
+//Special Values
+$radius-min: 0.125rem;
+$radius-regular: calc($radius-module * 2);
+$radius-section: calc($radius-module * 4);
+// Dictionary
+$radius-xs: 0.25rem;
+$radius-s: 0.5rem;
+$radius-m: 0.75rem;
+$radius-l: 1rem;
+$radius-xl: 2rem;
+$radius-full: 999rem;
+
+//Semantic
+$radius-card: $radius-xxx-large;
+$radius-circle: 50%;
+$radius-pill: $radius-full;
+
+
+
+// padding
+$base: 0.25rem;
+$p-0: 0;
+$p-px: calc($base / 4); // 1px
+$p-0-5: calc($base / 2); // 2px
+$p-1: calc($base / 1); // 4px
+$p-1-5: calc($base * 1.5); // 6px
+$p-2: calc($base * 2); // 8px
+$p-2-5: calc($base * 2.5); // 10px
+$p-3: calc($base * 3); // 12px
+$p-4: calc($base * 4); // 16px
+$p-5: calc($base * 5); // 20px
+$p-6: calc($base * 6); // 24px
+$p-7: calc($base * 7); // 28px
+$p-8: calc($base * 8); // 32px
+$p-9: calc($base * 9); // 36px
+$p-10: calc($base * 10); // 40px
+$p-11: calc($base * 11); // 44px
+$p-12: calc($base * 12); // 48px
+$p-14: calc($base * 14); // 56px
+$p-16: calc($base * 16); // 64px
+$p-20: calc($base * 20); // 80px
+$p-24: calc($base * 24); // 96px
+$p-28: calc($base * 28); // 112px
+$p-32: calc($base * 32); // 128px
+$p-36: calc($base * 36); // 144px
+$p-40: calc($base * 40); // 160px
+$p-44: calc($base * 44); // 176px
